@@ -8,6 +8,7 @@ app/wp-content/plugins/*
 app/wp-content/uploads
 
 !app/wp-content/plugins/mody*
+!app/wp-content/themes/cloud
 
 auth.json
 
