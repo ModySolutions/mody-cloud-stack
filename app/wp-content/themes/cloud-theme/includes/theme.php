@@ -14,6 +14,8 @@ add_action('enqueue_block_editor_assets', __NAMESPACE__.'\enqueue_block_editor_a
 
 add_filter('allowed_block_types_all', __NAMESPACE__.'\allowed_block_types_all');
 
+const NEED_TOBUILD_FRONTEND_ERROR_MESSAGE = '<strong>ERROR:</strong> You need to run `pnpm build` or `pnpm dev` to create the app.js file.';
+
 function init(): void {
     register_nav_menus([
         'header_menu' => __('Header menu'),
@@ -115,7 +117,11 @@ function wpseo_metabox_prio(): string {
 }
 
 function _scripts(): array {
-    $app = include(THEME_DIR.'/dist/app.asset.php');
+    $file = THEME_DIR.'/dist/app.asset.php';
+    if(!file_exists($file)) {
+        wp_die(__(NEED_TOBUILD_FRONTEND_ERROR_MESSAGE, 'app'));
+    }
+    $app = include($file);
     return [
         [
             'handle' => 'app',
@@ -128,7 +134,11 @@ function _scripts(): array {
 }
 
 function _styles(): array {
-    $app = include(THEME_DIR.'/dist/app.asset.php');
+    $file = THEME_DIR.'/dist/app.asset.php';
+    if(!file_exists($file)) {
+        wp_die(__(NEED_TOBUILD_FRONTEND_ERROR_MESSAGE, 'app'));
+    }
+    $app = include($file);
     return [
         [
             'handle' => 'app',

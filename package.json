@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:theme": "wp-scripts build --webpack-src-dir=resources --output-path=app/wp-content/themes/cloud-theme/dist --config config/webpack.config.js",
     "build:base-plugin": "wp-scripts build --webpack-src-dir=app/wp-content/plugins/mody-base/resources --output-path=app/wp-content/plugins/mody-base/dist --config config/webpack.config.js",
+    "dev:theme": "wp-scripts start --webpack-src-dir=resources --output-path=app/wp-content/themes/cloud-theme/dist --config config/webpack.config.js",
     "dev:base-plugin": "wp-scripts start --webpack-src-dir=app/wp-content/plugins/mody-base/resources --output-path=app/wp-content/plugins/mody-base/dist --config config/webpack.config.js"
   },
   "repository": {
