@@ -1,7 +1,8 @@
 app/.*
 app/*.*
-app/wp-includes
+app/wp
 app/wp-admin
+app/wp-includes
 app/wp-content/*.*
 app/wp-content/cache
 app/wp-content/plugins/*

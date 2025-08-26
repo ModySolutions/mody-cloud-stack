@@ -115,9 +115,6 @@ function wpseo_metabox_prio(): string {
 }
 
 function _scripts(): array {
-    if(!file_exists(THEME_DIR.'/dist/app.asset.php')){
-        wp_die('Please run "pnpm install && pnpm build" from the root directory.');
-    }
     $app = include(THEME_DIR.'/dist/app.asset.php');
     return [
         [
@@ -131,9 +128,6 @@ function _scripts(): array {
 }
 
 function _styles(): array {
-    if(!file_exists(THEME_DIR.'/dist/app.asset.php')){
-        wp_die('Please run "pnpm install && pnpm build" from the root directory.');
-    }
     $app = include(THEME_DIR.'/dist/app.asset.php');
     return [
         [

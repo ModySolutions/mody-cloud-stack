@@ -50,6 +50,18 @@
           "type": "zip"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "mody/cloud-theme",
+        "version": "1.0.0",
+        "type": "wordpress-theme",
+        "dist": {
+          "url": "https://github.com/ModySolutions/mody-cloud-theme/archive/refs/heads/main.zip",
+          "type": "zip"
+        }
+      }
     }
   ],
   "require": {
@@ -62,7 +74,8 @@
     "wpackagist-plugin/user-role-editor": "^4.64",
     "wpackagist-plugin/redirection": "^5.5",
     "wpackagist-plugin/redis-cache": "^2.6.3",
-    "wpackagist-plugin/elementor": "^3.31.2"
+    "wpackagist-plugin/elementor": "^3.31.2",
+    "mody/cloud-theme": "*"
   },
   "config": {
     "optimize-autoloader": true,
@@ -95,8 +108,11 @@
   "scripts": {
     "lint": "pint --test",
     "lint:fix": "pint",
+    "setup": "./bash/setup.sh",
+    "generate:config": "./bash/wp-config.sh",
     "post-install-cmd": [
-      "php finish-install.php"
+      "./bash/setup.sh",
+      "./bash/wp-config.sh"
     ]
   }
 }

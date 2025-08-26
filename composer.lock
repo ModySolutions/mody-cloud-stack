@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f576c2bb3080ab692320f64df93830a3",
+    "content-hash": "70b32f1308bd448d45585bda095242cc",
     "packages": [
         {
             "name": "composer/installers",
@@ -160,6 +160,15 @@
                 "url": "https://composer.repository.mody.es/advanced-custom-fields-acf-pro.zip"
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "mody/cloud-theme",
+            "version": "1.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/ModySolutions/mody-cloud-theme/archive/refs/heads/main.zip"
+            },
+            "type": "wordpress-theme"
         },
         {
             "name": "mody/elementor-pro",
