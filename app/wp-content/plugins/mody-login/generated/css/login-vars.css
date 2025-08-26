@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v43/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+
+body.login {
+	--orion-wp-login--background_color: rgb(245,245,245);
+	--orion-wp-login--text_color: rgb(1,17,10);
+	--orion-wp-login--link_color: rgb(0,62,31);
+	--orion-wp-login--submit_button_bg_color: #01110a;
+	--orion-wp-login--submit_button_text_color: rgb(245,245,245);
+	--orion-wp-login--container_background_color: #FFFFFF;
+	--orion-wp-login--default_button_background_color: rgb(245,245,245);
+	--orion-wp-login--default_button_text_color: rgb(0,62,31);
+	--orion-wp-login--custom_logo: url("https://mody.cloud.test/wp-content/uploads/2025/08/logo-mody-cloud.png");
+	--orion-wp-login--background_image: url("https://mody.cloud.test/wp-content/uploads/2025/08/grupo-de-personas-diversas-que-tienen-una-reunion-de-negocios-scaled.jpg");
+	--orion-wp-login--custom_logo_width: 200px;
+	--orion-wp-login--custom_logo_height: 7rem;
+	--orion-wp-login--login_container_width: 50%;
+	--orion-wp-login--login_container_height: rem;
+	--orion-wp-login--backtoblock_display: none;
+	--orion-wp-login--show_privacy_policy_page_link: none;
+	--orion-wp-login--custom_font_family: "Open Sans", sans-serif;
+	--orion-wp-login--message_position: static;
+	--orion-wp-login--notice_success: ;
+	--orion-wp-login--notice_error: ;
+	--orion-wp-login--notice_warning: ;
+	--orion-wp-login--notice_info: ;
+	--orion-wp-login--border_color: #f5f5f5;
+	--orion-wp-login--border_width: 1px;
+	--orion-wp-login--form_background_color: #f5f5f5;
+	--orion-wp-login--form_field_border_color: #01110a;
+	--orion-wp-login--form_padding: 3rem;
+	--orion-wp-login--form_border_radius: 0.3125rem;
+	--orion-wp-login--form_field_border: 1px;
+	--orion-wp-login--form_field_border_radius: 0px;
+	--orion-wp-login--form_width: 450px;
+	--orion-wp-login--align_items: stretch;
+	--orion-wp-login--justify_content: flex-end;
+	--orion-wp-login--flex_direction: row;
+	--orion-wp-login--login_container_padding: 1rem;
+	--orion-wp-login--login_container_margin: 0;
+	--orion-wp-login--login_container_display: flex;
+	--orion-wp-login--login_container_align_items: center;
+	--orion-wp-login--login_container_direction: column;
+	--orion-wp-login--login_container_justify_content: center;
+}

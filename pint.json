@@ -1,0 +1,11 @@
+{
+  "preset": "per",
+  "exclude": [
+    "config",
+    "resources",
+    "app/wp-includes",
+    "app/wp-admin",
+    "app/wp-content/mu-plugins",
+    "app/wp-content/plugins"
+  ]
+}

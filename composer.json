@@ -1,0 +1,99 @@
+{
+  "name": "mody/cloud",
+  "type": "project",
+  "license": "MIT",
+  "description": "Mody cloud",
+  "homepage": "https://mody.cloud",
+  "authors": [
+    {
+      "name": "Javier Troya",
+      "email": "javo@modysolutions.com",
+      "homepage": "https://github.com/phycticio"
+    }
+  ],
+  "keywords": [
+    "mody",
+    "cloud",
+    "wordpress",
+    "wp",
+    "wp-config"
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "mody/elementor-pro",
+        "version": "1.0.0",
+        "type": "wordpress-plugin",
+        "dist": {
+          "url": "https://composer.repository.mody.es/elementor-pro-wordpress-page-builder-pro-templates.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "mody/advanced-custom-fields-pro",
+        "version": "1.0.0",
+        "type": "wordpress-plugin",
+        "dist": {
+          "url": "https://composer.repository.mody.es/advanced-custom-fields-acf-pro.zip",
+          "type": "zip"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "composer/installers": "^2.2",
+    "roots/wordpress": "6.7.1",
+    "mody/advanced-custom-fields-pro": "*",
+    "mody/elementor-pro": "*",
+    "ext-pdo": "*",
+    "wpackagist-plugin/user-role-editor": "^4.64",
+    "wpackagist-plugin/redirection": "^5.5",
+    "wpackagist-plugin/redis-cache": "^2.6.3",
+    "wpackagist-plugin/elementor": "^3.31.2"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true
+    }
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "laravel/pint": "^1.18"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "app/wp-content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "app/wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "app/wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
+    "wordpress-install-dir": "app"
+  },
+  "scripts": {
+    "lint": "pint --test",
+    "lint:fix": "pint"
+  }
+}
