@@ -90,10 +90,13 @@
         "type:wordpress-theme"
       ]
     },
-    "wordpress-install-dir": "app"
+    "wordpress-install-dir": "app/wp"
   },
   "scripts": {
     "lint": "pint --test",
-    "lint:fix": "pint"
+    "lint:fix": "pint",
+    "post-install-cmd": [
+      "php finish-install.php"
+    ]
   }
 }
