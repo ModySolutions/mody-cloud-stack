@@ -17,7 +17,12 @@ const ORION_SETTINGS_OBJECT_ID   = 914;
 const ORION_GOOGLE_MAPS_API_KEY  = 'AIzaSyAncEM3NM9bgoV2vPCghVsC0Zj2wSQJ6PA';
 const ORION_GOOGLE_FONTS_API_KEY = 'AIzaSyBDjBu0YICdC1CxOAu5DTizv3gzzTLPs6o';
 
-require_once ORION_PATH . '/vendor/autoload.php';
+$autoload = ORION_PATH . '/vendor/autoload.php';
+if(!file_exists($autoload)){
+    wp_die('Please run "composer install" from the mody-login plugin directory.');
+}
+
+require_once $autoload;
 
 if ( function_exists( 'acf_add_local_field_group' ) ) {
 	\orion\actions\Orion_Initializer::start();
