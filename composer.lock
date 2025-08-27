@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd9902bac286584dd6303181f8d59401",
+    "content-hash": "02bbf5b409c04718ce7defc772918e8a",
     "packages": [
         {
             "name": "composer/installers",
@@ -158,6 +158,15 @@
             "dist": {
                 "type": "zip",
                 "url": "https://composer.repository.mody.es/advanced-custom-fields-acf-pro.zip"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "mody/ajax-search-pro",
+            "version": "1.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.repository.mody.es/ajax-search-pro-live-wordpress-search-filter-plugin.zip"
             },
             "type": "wordpress-plugin"
         },
@@ -362,15 +371,15 @@
         },
         {
             "name": "wpackagist-plugin/elementor",
-            "version": "3.31.2",
+            "version": "3.31.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/elementor/",
-                "reference": "tags/3.31.2"
+                "reference": "tags/3.31.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/elementor.3.31.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/elementor.3.31.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -509,12 +518,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "5e3e764a48c5ae5ac4e19f49434a7ac27e66929c"
+                "reference": "e3577178d2d0ae7fe287bd4d5d5950b7476e9aed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5e3e764a48c5ae5ac4e19f49434a7ac27e66929c",
-                "reference": "5e3e764a48c5ae5ac4e19f49434a7ac27e66929c",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/e3577178d2d0ae7fe287bd4d5d5950b7476e9aed",
+                "reference": "e3577178d2d0ae7fe287bd4d5d5950b7476e9aed",
                 "shasum": ""
             },
             "conflict": {
@@ -532,7 +541,7 @@
                 "airesvsg/acf-to-rest-api": "<=3.1",
                 "akaunting/akaunting": "<2.1.13",
                 "akeneo/pim-community-dev": "<5.0.119|>=6,<6.0.53",
-                "alextselegidis/easyappointments": "<=1.5.1",
+                "alextselegidis/easyappointments": "<1.5.2.0-beta1",
                 "alterphp/easyadmin-extension-bundle": ">=1.2,<1.2.11|>=1.3,<1.3.1",
                 "amazing/media2click": ">=1,<1.3.3",
                 "ameos/ameos_tarteaucitron": "<1.2.23",
@@ -570,7 +579,7 @@
                 "backpack/crud": "<3.4.9",
                 "backpack/filemanager": "<2.0.2|>=3,<3.0.9",
                 "bacula-web/bacula-web": "<9.7.1",
-                "badaso/core": "<2.7",
+                "badaso/core": "<=2.9.11",
                 "bagisto/bagisto": "<2.1",
                 "barrelstrength/sprout-base-email": "<1.2.7",
                 "barrelstrength/sprout-forms": "<3.9",
@@ -1465,7 +1474,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-25T23:05:33+00:00"
+            "time": "2025-08-26T23:05:13+00:00"
         }
     ],
     "aliases": [],

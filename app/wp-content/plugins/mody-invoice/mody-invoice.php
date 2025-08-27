@@ -10,4 +10,8 @@
 
 namespace Mody\Invoice;
 
+const INVOICE_POST_TYPE_NAME   = 'invoice';
+const INVOICE_POST_STATUS_NAME = 'invoice-status';
+
+require_once __DIR__ . '/includes/cpt.php';
 require_once __DIR__ . '/includes/acf-options.php';

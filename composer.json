@@ -54,6 +54,18 @@
     {
       "type": "package",
       "package": {
+        "name": "mody/ajax-search-pro",
+        "version": "1.0.0",
+        "type": "wordpress-plugin",
+        "dist": {
+          "url": "https://composer.repository.mody.es/ajax-search-pro-live-wordpress-search-filter-plugin.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
         "name": "mody/cloud-theme",
         "version": "1.0.0",
         "type": "wordpress-theme",
@@ -70,6 +82,7 @@
     "roots/wordpress": "*",
     "mody/advanced-custom-fields-pro": "*",
     "mody/elementor-pro": "*",
+    "mody/ajax-search-pro": "*",
     "ext-pdo": "*",
     "wpackagist-plugin/user-role-editor": "^4.64",
     "wpackagist-plugin/redirection": "^5.5",
