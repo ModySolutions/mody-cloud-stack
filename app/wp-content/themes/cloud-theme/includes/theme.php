@@ -14,7 +14,7 @@ add_action('enqueue_block_editor_assets', __NAMESPACE__.'\enqueue_block_editor_a
 
 add_filter('allowed_block_types_all', __NAMESPACE__.'\allowed_block_types_all');
 
-const NEED_TOBUILD_FRONTEND_ERROR_MESSAGE = '<strong>ERROR:</strong> You need to run `pnpm build` or `pnpm dev` to create the app.js file.';
+const MODY_FILE_DOES_NOT_EXISTS = 'Please run <em>pnpm i && pnpm build:theme</em> in the root directory og the project to build the theme';
 
 function init(): void {
     register_nav_menus([
@@ -117,11 +117,11 @@ function wpseo_metabox_prio(): string {
 }
 
 function _scripts(): array {
-    $file = THEME_DIR.'/dist/app.asset.php';
-    if(!file_exists($file)) {
-        wp_die(__(NEED_TOBUILD_FRONTEND_ERROR_MESSAGE, 'app'));
-    }
-    $app = include($file);
+	$app_file = THEME_DIR.'/dist/app.asset.php';
+	if(!file_exists($app_file)) {
+		wp_die(__(MODY_FILE_DOES_NOT_EXISTS, 'app'), '404 Not Found');
+	}
+    $app = include($app_file);
     return [
         [
             'handle' => 'app',
@@ -134,11 +134,11 @@ function _scripts(): array {
 }
 
 function _styles(): array {
-    $file = THEME_DIR.'/dist/app.asset.php';
-    if(!file_exists($file)) {
-        wp_die(__(NEED_TOBUILD_FRONTEND_ERROR_MESSAGE, 'app'));
-    }
-    $app = include($file);
+	$app_file = THEME_DIR.'/dist/app.asset.php';
+	if(!file_exists($app_file)) {
+		wp_die(__(MODY_FILE_DOES_NOT_EXISTS, 'app'), '404 Not Found');
+	}
+	$app = include($app_file);
     return [
         [
             'handle' => 'app',
